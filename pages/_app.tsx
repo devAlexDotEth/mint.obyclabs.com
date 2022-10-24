@@ -10,10 +10,8 @@ const activeChainId = ChainId.Mainnet;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider 
-      desiredChainId={activeChainId}
-      chainRpc={{ [ChainId.Mainnet]: "https://restless-lingering-slug.quiknode.pro/5ad1193ba51bb094965a623646748316062962f7/" }} >
-
+    <ThirdwebProvider desiredChainId={activeChainId}
+    chainRpc={{ [ChainId.Mainnet]: "https://restless-lingering-slug.quiknode.pro/5ad1193ba51bb094965a623646748316062962f7/" }}>
       <Header />
       <Head>
         <title>OBYC Labs™</title>
